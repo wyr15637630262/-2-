@@ -1,0 +1,97 @@
+/*会员列表样式*/
+@import "../../../../static/scss/main";
+.memberList_content{
+  @include boxStyle(1000px);
+  .query_criteria{
+    width: 98%;
+    height:72px;
+    margin: 0 auto;
+    .query_name{
+      float: left;
+      width: 210px;
+      margin: 20px 0;
+      label{
+        @include label;
+      }
+      input{
+        @include inputStyle(165px,28px,1px solid #cccccc);
+        @include border-radius;
+      }
+    }
+    .query_date{
+      float: left;
+      width: 210px;
+      margin: 20px 0 20px 20px;
+      label{
+        @include label;
+      }
+      input{
+        @include inputStyle(165px,28px,1px solid #cccccc);
+        @include border-radius;
+      }
+    }
+    .query_ensure{
+      float: left;
+      margin: 20px 0 20px 20px;
+      input{
+        background: #ec6a47;
+        color: #ffffff;
+        line-height: 30px;
+        font-size: 12px;
+        @include inputStyle(50px,30px,0);
+        @include border-radius;
+      }
+    }
+  }
+  .memberList_table{
+    width: 98%;
+    height: auto;
+    margin: 10px auto;
+    border-collapse: collapse;
+    thead{
+      width: 100%;
+      height: 65px;
+      line-height: 65px;
+      background: #f4f0ee;
+      color: #626363;
+      font-size: 14px;
+      td{
+        text-align: center;
+      }
+    }
+    tbody{
+      width: 100%;
+      color: #9c9b9c;
+      font-size: 12px;
+      tr{
+        &:nth-of-type(n){
+          background: #ffffff;
+        }
+        &:nth-of-type(2n){
+          background: #f8f8fb;
+        }
+        td{
+          text-align: center;
+          height: 60px;
+          line-height: 60px;
+          a{
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+  .memberList_page{
+    width: 98%;
+    margin: 20px auto;
+    .pages{
+      width: 100%;
+      .el-pagination{
+        width: 98%;
+        color: #9c9b9c;
+        text-align: right;
+      }
+    }
+  }
+}
+

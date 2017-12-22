@@ -1,0 +1,229 @@
+
+@import "../../../../static/scss/main";
+.storeGroup_content{
+  @include boxStyle(1000px);
+  .query_criteria{
+    width: 98%;
+    height: 72px;
+    margin: 0 auto;
+    .query_name{
+      float: left;
+      width: 210px;
+      margin: 20px 0;
+      label{
+        @include label;
+      }
+      input{
+        @include inputStyle(155px,28px,1px solid #cccccc);
+        @include border-radius;
+        padding-left: 10px;
+      }
+    }
+    .query_ensure{
+      float: left;
+      margin: 20px 0 20px 20px;
+      input{
+        background: #ec6a47;
+        color: #ffffff;
+        line-height: 30px;
+        font-size: 12px;
+        @include inputStyle(50px,30px,0);
+        @include border-radius;
+      }
+    }
+    .query_newAdd{
+      width: 70px;
+      height: 30px;
+      background: #ec6a47;
+      float: right;
+      line-height: 30px;
+      text-align: center;
+      margin-top:20px;
+      cursor: pointer;
+      a{
+        color: #ffffff;
+        font-size: 12px;
+      }
+      @include border-radius;
+    }
+    .query_recycled{
+      width: 70px;
+      height: 30px;
+      background: #ec6a47;
+      float: right;
+      line-height: 30px;
+      text-align: center;
+      margin:20px 0 20px 10px;
+      position: relative;
+      cursor: pointer;
+      a{
+        color: #ffffff;
+        font-size: 12px;
+      }
+      img{
+        position: absolute;
+        bottom:0;
+        right: 0;
+      }
+      @include border-radius;
+    }
+  }
+  .storeList_table{
+    width: 98%;
+    height: auto;
+    margin: 10px auto;
+    border-collapse: collapse;
+    thead{
+      width: 100%;
+      height: 65px;
+      line-height: 65px;
+      background: #f4f0ee;
+      color: #626363;
+      font-size: 14px;
+      td{
+        text-align: center;
+      }
+    }
+    tbody{
+      width: 100%;
+      color: #9c9b9c;
+      font-size: 12px;
+      tr{
+        &:nth-of-type(n){
+          background: #ffffff;
+        }
+        &:nth-of-type(2n){
+          background: #f8f8fb;
+        }
+        td{
+          text-align: center;
+          height: 60px;
+          line-height: 60px;
+          a{
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+  .storeList_page{
+    width: 98%;
+    margin: 20px auto;
+    .pages{
+      width: 100%;
+      .el-pagination{
+        width: 98%;
+        color: #9c9b9c;
+        text-align: right;
+      }
+    }
+  }
+}
+.addMask,.mask{
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.3);
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  .addMask_content,.mask_content{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 485px;
+    height: 337px;
+    background: #fff;
+    border-radius: 5px;
+    .addMaskC_top,.maskC_top{
+      width: 465px;
+      height: 60px;
+      line-height: 60px;
+      border-bottom: 1px solid #cccccc;
+      padding-left: 20px;
+      a{
+        font-size: 16px;
+        color: #888688;
+      }
+    }
+    .addMaskC_center,.maskC_center{
+      width: 485px;
+      height: 214px;
+      .adc_content,.mc_content{
+        width: 248px;
+        height: 98px;
+        margin: 0 auto;
+        padding: 58px 0;
+        .tagName{
+          width: 100%;
+          height: 68px;
+          label{
+            font-size: 12px;
+            color: #444344;
+            padding-right: 22px;
+          }
+          input{
+            width: 154px;
+            height: 28px;
+            @include border-radius;
+            border: 1px solid #cccccc;
+            outline: none;
+            padding-left: 10px;
+            color: #444344;
+          }
+        }
+        .sort{
+          width: 100%;
+          height: 30px;
+          label{
+            font-size: 12px;
+            color: #444344;
+            padding-right: 22px;
+          }
+          input{
+            width: 154px;
+            height: 28px;
+            @include border-radius;
+            border: 1px solid #cccccc;
+            outline: none;
+            padding-left: 10px;
+            color: #444344;
+          }
+        }
+      }
+    }
+    .maskC_bottom,.addMaskC_bottom{
+      width: 485px;
+      height: 60px;
+      background: #fef5f2;
+      .mb_content,.adb_content{
+        width: 139px;
+        height: 100%;
+        margin: 0 auto;
+        input{
+          float: left;
+          display: inline-block;
+          outline: none;
+          width: 62px;
+          height: 30px;
+          border: 0;
+          @include border-radius;
+          margin-top: 15px;
+          font-size: 12px;
+          &:nth-of-type(1) {
+            background: #e1e1e1;
+            color: #7d7b7d;
+          }
+          &:nth-of-type(2) {
+            background: #ec6a47;
+            color: #FFFFFF;
+            margin-left: 15px;
+          }
+        }
+      }
+    }
+  }
+}

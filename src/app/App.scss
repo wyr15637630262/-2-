@@ -1,0 +1,21 @@
+/**
+ * App Scss 文件
+ * @JsName App
+ * @Description App 主视图(全局)样式
+ * @DateTime 2017-10-17 13:45
+ * @author 花花
+ */
+#App {
+  ont-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2c3e50;
+  margin: 0;
+  padding: 0;
+}
+body,html{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}

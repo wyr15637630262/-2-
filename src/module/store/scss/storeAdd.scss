@@ -1,0 +1,173 @@
+/*添加店铺*/
+@import "../../../../static/scss/main";
+.storeAdd_content{
+  @include boxStyle(1500px);
+  .storeAddContent{
+    width: 93%;
+    margin: 20px auto;
+    .branchName{
+      height: 50px;
+      label{
+        @include label;
+        padding-right: 15px;
+      }
+      input{
+        @include inputStyle(155px,28px,1px solid #cccccc);
+        @include border-radius;
+        padding-left: 10px;
+      }
+    }
+    .branchCode,.sortOrder{
+      margin-top: 10px;
+      height: 50px;
+      label{
+        @include label;
+        padding-right: 15px;
+      }
+      input{
+        @include inputStyle(155px,28px,1px solid #cccccc);
+        @include border-radius;
+        padding-left: 10px;
+      }
+    }
+    .status{
+      margin-top: 10px;
+      height: 50px;
+      label{
+        @include label;
+        padding-right: 15px;
+      }
+    }
+    .property,.branchType,.manageMode{
+      margin-top: 10px;
+      height: 50px;
+      label{
+        @include label;
+        padding-right: 15px;
+      }
+    }
+    .group{
+      margin-top: 10px;
+      height: 50px;
+      label{
+        @include label;
+        padding-right: 15px;
+      }
+      .el-select{
+        width: 167px;
+      }
+    }
+    .acreage,.openingTime{
+      margin-top: 10px;
+      height: 50px;
+      label{
+        @include label;
+        padding-right: 15px;
+      }
+      input{
+        @include inputStyle(155px,28px,1px solid #cccccc);
+        @include border-radius;
+        padding-left: 10px;
+      }
+    }
+    .acreage{
+      margin-top: 20px;
+    }
+    .district{
+      margin-top: 10px;
+      height: 50px;
+      label{
+        @include label;
+        padding-right: 15px;
+      }
+      .labelStyle{
+        word-spacing: 24px;
+      }
+    }
+    .branchDes{
+      margin-top: 10px;
+      height: 50px;
+      label{
+        @include label;
+        padding-right: 15px;
+        vertical-align: top;
+      }
+      textarea{
+        border-color: #cccccc;
+        text-indent: 10px;
+        outline: none;
+      }
+    }
+    .reservePrice{
+      margin-top: 10px;
+      height: 50px;
+      label{
+        @include label;
+        padding-right: 15px;
+      }
+      input{
+        @include inputStyle(155px,28px,1px solid #cccccc);
+        @include border-radius;
+        padding-left: 10px;
+      }
+    }
+    .adress{
+      margin-top: 10px;
+      height: 50px;
+      display: flex;
+      .adress_label{
+        width: 71px;
+        height: 50px;
+        line-height: 50px;
+        a{
+          font-size: 14px;
+          color: #626363;
+        }
+      }
+      .example{
+        height: 50px;
+        line-height: 50px;
+        select{
+          width: 120px;
+          height: 30px;
+          border-color: #cccccc;
+          @include border-radius;
+        }
+        input{
+          @include inputStyle(155px,28px,1px solid #cccccc);
+          @include border-radius;
+          padding-left: 10px;
+          margin-left: 10px;
+        }
+      }
+    }
+    .detailAdress{
+      height: 40px;
+      line-height: 40px;
+      input{
+        @include inputStyle(200px,28px,1px solid #cccccc);
+        @include border-radius;
+        padding-left: 10px;
+        margin-left: 71px;
+      }
+    }
+  }
+  .storeAdd_button{
+    width: 98%;
+    height: 30px;
+    background: papayawhip;
+    margin: 30px auto;
+    padding: 15px 0;
+    input{
+      width: 80px;
+      height: 30px;
+      background: #ec6a47;
+      border:0;
+      @include border-radius;
+      display: block;
+      margin: 0 auto;
+      color: #ffffff;
+      outline: none;
+    }
+  }
+}

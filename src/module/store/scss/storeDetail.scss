@@ -1,0 +1,5 @@
+/*店铺详情列表*/
+@import "../../../../static/scss/main";
+.storeDetail_content{
+  @include boxStyle(1000px);
+}

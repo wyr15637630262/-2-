@@ -1,0 +1,5 @@
+/*订单详情列表*/
+@import "../../../../static/scss/main";
+.orderDetail_content{
+  @include boxStyle(1000px);
+}

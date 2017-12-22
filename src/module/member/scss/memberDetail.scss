@@ -1,0 +1,39 @@
+/*会员详情列表*/
+@import "../../../../static/scss/main";
+.memberDetail_content{
+  @include boxStyle(1000px);
+  .tab{
+    width: 100%;
+    height: 51px;
+    background: #fef5f2;
+    ul{
+      width: 582px;
+      height: 50px;
+      padding: 0;
+      margin: 0;
+      border-left: 1px solid #ffe5de;
+      float: left;
+      li{
+        float: left;
+        height: 50px;
+        line-height: 50px;
+        width: 96px;
+        border-right: 1px solid #ffe5de;
+        border-bottom: 1px solid #ffe5de;
+        color: #7d7c7d;
+        font-size: 14px;
+        cursor: pointer;
+        text-align: center;
+      }
+      .active{
+        color: #ec6a47;
+        border-bottom: 1px solid #ec6a47;
+      }
+    }
+    .tabs_right{
+      margin-left: 582px;
+      height: 50px;
+      border-bottom: 1px solid #ffe5de;
+    }
+  }
+}
